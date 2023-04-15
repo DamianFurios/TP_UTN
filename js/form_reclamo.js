@@ -36,27 +36,3 @@ function validarDatos() {
 })
 
 }
-
-/* const email = document.getElementById("email");
-const numero = document.getElementById("num");
-const form = document.getElementById("form");
-const parrafo = document.getElementById("warnings");
-
-form.addEventListener("submit", e=>{
-        e.preventDefault();
-        let warnings = "";
-        let enviar = false;
-        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/ ;
-        parrafo.innerHTML = "";
-
-        if (!regexEmail.test(email.value)){
-            warnings +="El mail no es válido o es un campo vacío.";
-            enviar = true;
-        }
-        if (enviar){
-            parrafo.innerHTML = warnings;
-        }else{
-            parrafo.innerHTML = "Enviado"
-        }
-})
- */
