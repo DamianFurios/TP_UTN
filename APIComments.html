@@ -1,0 +1,54 @@
+<style>
+  .comentario {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  float: none;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+  .comentario h4 {
+    margin-top: 0;
+  }
+</style>
+
+<div id="comentarios"></div>
+
+<script>
+  async function obtenerComentarios() {
+    const respuesta = await fetch('https://jsonplaceholder.typicode.com/comments');
+    const comentarios = await respuesta.json();
+    return comentarios;
+  }
+
+  async function mostrarComentarios() {
+    const comentarios = await obtenerComentarios();
+    const comentariosDiv = document.getElementById('comentarios');
+
+    comentarios.forEach((comentario) => {
+      const comentarioDiv = document.createElement('div');
+      comentarioDiv.className = 'comentario';
+
+      const emailHeader = document.createElement('h4');
+      emailHeader.innerText = comentario.email;
+
+      const bodyP = document.createElement('p');
+      bodyP.innerText = comentario.body;
+
+      comentarioDiv.appendChild(emailHeader);
+      comentarioDiv.appendChild(bodyP);
+
+      comentariosDiv.appendChild(comentarioDiv);
+    });
+  }
+
+  mostrarComentarios();
+</script>
+
+
+
