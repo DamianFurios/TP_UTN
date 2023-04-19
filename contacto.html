@@ -55,19 +55,108 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<<<<<<< Updated upstream:service.html
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Empresa</a></li>
+=======
+
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">¿Quienes Somos?</a></li>
+>>>>>>> Stashed changes:contacto.html
                         <li class="nav-item"><a class="nav-link" href="reclamos.html">Reclamos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page Content  -->
+        <div class="accordion container px-4 px-lg-5 my-5" id="accordionExample">
+            <div class="accordion-item border-dark">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Quienes somos?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 En DaSeNi nos dedicamos a la venta y distribución de maquinaria pesada, herramientas, accesorios, entre otros. Contamos con una amplia gama de productos y marcas número uno a nivel global.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-dark">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Objetivo
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Proporcionar soluciones integrales y de alta calidad en maquinaria pesada para nuestros clientes, satisfaciendo sus necesidades y superando sus expectativas.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-dark">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Mision
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Ser una empresa líder en la venta de maquinaria pesada, ofreciendo equipos innovadores y de alta tecnología, y brindando un servicio excepcional que genere la confianza y fidelidad de nuestros clientes.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-dark">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Vision
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Ser reconocidos como el mejor proveedor de soluciones en maquinaria pesada a nivel nacional e internacional, a través de nuestro compromiso con la excelencia en el servicio, la innovación constante y la calidad en nuestros productos. Además, ser una empresa que promueva el desarrollo sostenible y la responsabilidad social en todas sus operaciones.
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+
+        <div class="container">
+          <h1>Formulario de contacto</h1>
+          <!-- Creamos el formulario con Bootstrap -->
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <!-- Agregamos los scripts de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+        
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
      
-                <div class="col-lg-5">
+                <div class="col-lg-5 mx-auto my-5">
                     <h1 class="font-weight-light">Formulario de consultas</h1>
                     <p>Este es un formulario para consultas, como información de máquinas, características y presupuestos.
                         Una vez adjuntados tus datos, el equipo de ventas te contactará a la brevedad.
