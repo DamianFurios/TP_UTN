@@ -2,14 +2,23 @@
 function validarDatos() {
     $("#msjNombre").text("");
     $("#msjApellido").text("");
-
+    $("#msjNum").text("");
   let nombre = $("#name").val();
   let apellido = $("#apellido").val();
+   let num = $("#num").val();
   const email = document.getElementById("email");
   const numero = document.getElementById("num");
   const form = document.getElementById("form");
   const parrafo1 = document.getElementById("warnings");
   const parrafo2 = document.getElementById("msjEnviado");
+    if(num == ""){
+    $("#msjNum").text("Completar este campo");
+  }else{
+    let numValido = /^[0-9]+$/;  
+    if (!numValido.match(num) ){
+        $("#msjNum").text("Complete este campo");
+    }
+  }
   if (nombre == ""){
     $("#msjNombre").text("Complete este campo")
   }

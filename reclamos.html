@@ -55,9 +55,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reclamos.html">Reclamos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="reclamos.html">Reclamos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                     </ul>
@@ -67,9 +67,9 @@
         <!-- Page Content  -->
         <div class="container my-5 py-4 ">
             <!-- Heading Row-->
-            <div class="row justify-content-center">
-                <div class="col-5">
-                    <h1 class="font-weight-light ">Reclamos</h1>
+            <div class="row">
+                <div class="col">
+                    <h1 class="font-weight-light">Reclamos</h1>
                     <p>Rellene el formulario para realizar un reclamo. En la casilla de texto, ud podrá comentarnos el problema que haya tenido con nuestros productos o servicios.
                         Una vez adjuntados tus datos y enviado el formulario, el equipo de atención al cliente contactará con usted a la brevedad.
                     </p>
@@ -91,7 +91,8 @@
                         <input type="email" class="form-control" id="email" placeholder="email@example.com">
                         <p class="warnings" id="warnings"></p><br><br>
                         <label for="nombre">Numero de telefono:</label>
-                        <input type="number" class="form-control -webkit-outer-spin-button" id="num" placeholder="343 000 0000"><br><br>
+                        <input type="number" class="form-control -webkit-outer-spin-button" id="num" placeholder="+5491137555335"><br>
+                        <label for="number" id="msjNum" class="msjColor"></label><br>
                         <label for="form-label">Casilla de reclamos:</label>
                         <textarea class="form-control" id="comentario" rows="5" cols="20"></textarea><br>
                         <p class="warnings" id="msjEnviado"></p><br>
@@ -144,7 +145,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/form_reclamo.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </body>
 </html>
