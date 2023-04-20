@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Landing Page - ArPro</title>
+        <title>Contacto</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -45,6 +45,13 @@
             .msjColor{
             color: red;
             }
+            #map{
+                display: block;
+                width: 400px;
+                height: 300px;
+                margin-bottom: 200px;
+                margin-left: 300px;
+            }
         </style>
     </head>
     <body>
@@ -65,9 +72,6 @@
                 </div>
             </div>
         </nav>
-       
-
-
 
         <div class="container col-6 my-5" id="formulario">
           <h1>Formulario de contacto</h1>
@@ -95,7 +99,13 @@
             </div>
             <button type="submit" class="btn btn-primary" onclick="validarDatos()">Enviar</button>
           </form>
+          <div class="row py-5">
+            <h3>Tambien podes ubicarnos en Ruta 11, Km 1.006,2 (3500) - Resistencia, Chaco </h3>
+          </div>
         </div>
+        <div class="row" id="map">
+        </div>
+
         <!-- Agregamos los scripts de Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -112,6 +122,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js\scripts.js"></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM8G4BJDFz8-7ZqCOA5-RuTtT_Xcr9nZQ&callback=iniciarMap"></script>
+        <script src="js\api_maps.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </body>
 </html>
