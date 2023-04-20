@@ -65,30 +65,33 @@
             </div>
         </nav>
         <!-- Page Content  -->
-        <div class="container px-4 px-lg-5">
+        <div class="container my-5 py-4 ">
             <!-- Heading Row-->
-     
-                <div class="col-lg-5">
-                    <h1 class="font-weight-light">Reclamos</h1>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <h1 class="font-weight-light ">Reclamos</h1>
                     <p>Rellene el formulario para realizar un reclamo. En la casilla de texto, ud podrá comentarnos el problema que haya tenido con nuestros productos o servicios.
                         Una vez adjuntados tus datos y enviado el formulario, el equipo de atención al cliente contactará con usted a la brevedad.
                     </p>
-<!--                     <a class="btn btn-primary" href="#!">Call to Action!</a> -->
                 </div>
             </div>
             <!-- Call to Action-->
-            <div class="text-white bg-primary my-5 py-4 text-center" id="bg_form">
-                <h2>Reclamos</h2>
+            <div class=" my-5 py-4" id="bg_form">
+                <h2 class="text-center">Reclamos</h2>
                 <!-- <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div> -->
                 <div class="col-6 mx-auto ">
                     <form action="" method="post" id="form">
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
-                        <label for="" id="msjNombre" class="msjColor"></label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" >
-                        <label for="" id="msjApellido" class="msjColor"></label>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Juan">
+                        <label for="" id="msjNombre" class="msjColor"></label><br>
+                        <label for="nombre">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Perez" >
+                        <label for="" id="msjApellido" class="msjColor"></label><br>
+                        <label for="nombre">Email:</label>
                         <input type="email" class="form-control" id="email" placeholder="email@example.com">
-                        <p class="warnings" id="warnings"></p><br>
-                        <input type="number" class="form-control -webkit-outer-spin-button" id="num" placeholder="Ingrese su número de teléfono"><br><br>
+                        <p class="warnings" id="warnings"></p><br><br>
+                        <label for="nombre">Numero de telefono:</label>
+                        <input type="number" class="form-control -webkit-outer-spin-button" id="num" placeholder="343 000 0000"><br><br>
                         <label for="form-label">Casilla de reclamos:</label>
                         <textarea class="form-control" id="comentario" rows="5" cols="20"></textarea><br>
                         <p class="warnings" id="msjEnviado"></p><br>
